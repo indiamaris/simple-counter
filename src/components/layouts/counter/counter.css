@@ -1,14 +1,54 @@
 /** @format */
 
 .btn {
-	height: 70px;
-	width: 190px;
+	height: 30px;
+	width: 90px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	color: aliceblue;
 	font-family: 'Roboto Mono', monospace;
-	font-size: 80px;
+	font-size: 20px;
+	background-color: rgb(11, 99, 102);
+	border: solid 3px rgb(6, 114, 117);
+	border-radius: 55px;
+	box-shadow: 1px 3px rgb(4, 155, 160), 0em 0em 0.3em rgb(246, 248, 248);
+	cursor: pointer;
+
+}
+.counter_page {
+	font-size: 20px;
+}
+
+.counter_name {
+	font-size: 150px;
+}
+
+.spacing {
+	height: 50px;
+	width: 0px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.D {
+	height: 200px;
+}
+
+@media screen and (min-width: 300px) {
+	/** @format */
+
+.btn {
+	height: 70px;
+	width: 130px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: aliceblue;
+	font-family: 'Roboto Mono', monospace;
+	font-size: 60px;
 	background-color: rgb(11, 99, 102);
 	border: solid 3px rgb(6, 114, 117);
 	border-radius: 55px;
@@ -21,12 +61,12 @@
 }
 
 .counter_name {
-	font-size: 250px;
+		height: 200px;
+	font-size: 200px;
 }
 
 .spacing {
-	height: 250px;
-	width: 300px;
+	height: 80px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -34,6 +74,7 @@
 }
 
 .D {
-	height: 300px;
+	height: 70px;
+}
 }
 

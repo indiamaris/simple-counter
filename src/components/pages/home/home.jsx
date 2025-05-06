@@ -1,30 +1,18 @@
 /** @format */
-import './home.css';
 import React from 'react';
-import { Outlet, Link } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 import Header from '../../layouts/header/header';
-import SubHeader from '../../layouts/subheader/subheader';
-
+import './home.css';
 const Home = () => {
 	return (
-		<div className='containerHeader'>
-			<div className='header'>
-				<Header />
-			</div>
-			<SubHeader />
-
-			<div className='left_page'>
-				<Link to={'/loving'}>
-					<span className='start'> Let's Start!</span>
-				</Link>
-			</div>
-			<div className='pagealign'>
-				<div className='counter_page'>
-					<div className='outlet_counter'>
-						<Outlet />
-					</div>
-				</div>
-			</div>
+		<div className='homeContainer'>
+			<div className="main">
+				<div className='headerContainer'>
+					<Header />
+					<Link to={'/loving'}>
+					<span className='start'>start!</span>
+				</Link></div></div>
+			<div className="counter">					<Outlet /></div>
 		</div>
 	);
 };
