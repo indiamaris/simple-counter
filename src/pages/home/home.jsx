@@ -1,7 +1,7 @@
 /** @format */
 import React from 'react';
 import { Link, Outlet } from 'react-router-dom';
-import Header from '../../layouts/header/header';
+import Header from '../../components/header/header';
 import './home.css';
 const Home = () => {
 	return (
@@ -12,7 +12,7 @@ const Home = () => {
 					<Link to={'/loving'}>
 					<span className='start'>start!</span>
 				</Link></div></div>
-			<div className="counter">					<Outlet /></div>
+			<div className="counter">				<Outlet /></div>
 		</div>
 	);
 };

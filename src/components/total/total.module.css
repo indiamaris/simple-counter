@@ -1,0 +1,22 @@
+.totalContainer{
+    border-radius: 60%;
+    padding: 50px;
+        background-color: #F0F3BD;
+          width: 500px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 150px;
+}
+
+.total{
+    color: #C64191;
+    width: 400px;
+    height: 400px;
+	font-size: 400px;
+       display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}

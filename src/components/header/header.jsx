@@ -7,7 +7,7 @@ const Header = () => {
 	return (
 		<div className=''> 
 		<Link to={'/'}>
-		<h1 className={styles.header}> LOVEMETHER</h1>
+		<h1 className={styles.header}> Simple Counter</h1>
 			</Link>
 			<span className={styles.mainInfo}>
 				<MainInfo/>

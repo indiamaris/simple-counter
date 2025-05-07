@@ -3,8 +3,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Counter from './components/layouts/counter/counter';
-import Home from './components/pages/home/home';
+import Counter from './components/counter/counter';
+import Home from './pages/home/home';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
 	<React.StrictMode>
