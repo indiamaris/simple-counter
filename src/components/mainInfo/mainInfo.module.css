@@ -14,7 +14,7 @@ padding-bottom: 20px;
 		
 }
 
-@media screen and (min-width: 300px) {
+@media screen and (max-width: 768px){
 	.mainInfo{
 		color: #028090;
 		font-size: 20px;

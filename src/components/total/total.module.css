@@ -21,7 +21,7 @@
    
 }
 
-@media screen and (min-width: 300px) {
+@media screen and (max-width: 768px){
 
     .total{
         font-size: 90px;
