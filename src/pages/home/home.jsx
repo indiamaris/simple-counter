@@ -1,7 +1,8 @@
 /** @format */
 import React from 'react';
-import { Link, Outlet } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
 import Header from '../../components/header/header';
+import { StartButton } from '../../components/start-button/start-button';
 import './home.css';
 const Home = () => {
 	return (
@@ -9,9 +10,8 @@ const Home = () => {
 			<div className="main">
 				<div className='headerContainer'>
 					<Header />
-					<Link to={'/loving'}>
-					<span className='start'>start!</span>
-				</Link></div></div>
+					<StartButton />
+				</div></div>
 			<div className="counter">				<Outlet /></div>
 		</div>
 	);

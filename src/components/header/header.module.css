@@ -3,19 +3,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
 /** @format */
 
-@media screen and (min-width: 900px) {
 
 	.header{
-		color: #C64191;
+
 		color: #1A5E63;
 		font-size: 65px;
 	}	
 		
-}
+
 
 @media screen and (min-width: 300px) {
 	
+.header{
+	
+			color: #1A5E63;
+					font-size: 46px;
+					padding-bottom: 20px;
 
+	}
 	
 
 	

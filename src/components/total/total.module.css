@@ -20,3 +20,17 @@
     justify-content: center;
    
 }
+
+@media screen and (min-width: 300px) {
+
+    .total{
+        font-size: 90px;
+    }
+    .totalContainer{
+    border-radius: 60%;
+    padding: 20px;
+        background-color: #F0F3BD;
+          width: 150px;
+    height: 150px;}
+
+}
