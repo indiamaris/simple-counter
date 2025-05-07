@@ -8,11 +8,10 @@ const Counter = () => {
 	const [total, setTotal] = useState(0);
 
 	const handleIncremet = () => {
-		console.log(total)
-		setTotal(total + 1);
+	setTotal((total)=>total + 1);
 	};
 	const handleDecrement = () => {
-		setTotal(total - 1);
+		setTotal((total)=>total - 1);
 	};
 
 	return (
