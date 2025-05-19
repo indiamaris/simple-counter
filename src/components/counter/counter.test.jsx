@@ -1,6 +1,6 @@
 import { fireEvent, render, screen } from '@testing-library/react';
 import React from 'react';
-import Counter from '../counter';
+import Counter from './counter';
 
 describe('Counter Component', () => {
   test('renders without crashing', () => {

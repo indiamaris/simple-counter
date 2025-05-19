@@ -15,11 +15,11 @@ const Counter = () => {
 	};
 
 	return (
-		<div className={styles.counterPage}>		
-			<Total value={total} />	
+		<div className={styles.counterPage} data-testid="counter-page">		
+			<Total value={total} data-testid="total-value"/>	
 			<div className={styles.counterButtons}>	
-			<CounterButton label={'+1'} handleClick={handleIncremet}/>
-			<CounterButton label={'-1'} handleClick={handleDecrement} />		
+			<CounterButton label={'+1'} handleClick={handleIncremet} data-testid="increment-button"/>
+			<CounterButton  label={'-1'} handleClick={handleDecrement} data-testid="decrement-button"/>		
 	</div>
 		</div>
 	);

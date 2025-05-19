@@ -1,6 +1,6 @@
 import { fireEvent, render, screen } from '@testing-library/react';
 import React from 'react';
-import { CounterButton } from '../counter-button';
+import { CounterButton } from './counter-button';
 
 describe('CounterButton Component', () => {
   const mockHandleClick = jest.fn();

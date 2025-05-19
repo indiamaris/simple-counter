@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import React from 'react';
-import Info from '../info';
+import Info from './info';
 
 describe('Info Component', () => {
   test('renders without crashing', () => {

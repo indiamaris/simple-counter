@@ -4,7 +4,7 @@ export const StartButton = () => {
 	return (
 		<Link to={'/loving'}>
 
-				<span className={styles.start}>start!</span>
+				<span data-testid="start-button" className={styles.start}>start!</span>
 
 		</Link>
 	);
