@@ -1,12 +1,18 @@
 /** @format */
 import React from 'react';
-import { Main } from '../components/main/main';
+import Header from '../components/main/header/header';
+import Info from '../components/main/info/info';
+import { StartButton } from '../components/main/start-button/start-button';
 import { AppUI } from './app.ui';
 
 const App = () => {
 
 	return <AppUI
-		main={<Main />}
+		main={<div>
+  <Header />
+			<Info />
+			<StartButton />
+		</div>}
 	/>;
 	};
 
