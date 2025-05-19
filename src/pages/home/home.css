@@ -68,7 +68,7 @@ a {
 
 @media screen and (max-width: 768px){ 
 	.homeContainer {
-		height: 100dvh;
+		height: 100svh;
 		grid-template-columns: 1fr;
 		grid-template-rows: 1fr 1fr;
 	}
