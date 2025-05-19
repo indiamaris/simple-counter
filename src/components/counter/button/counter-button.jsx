@@ -1,10 +1,13 @@
-import styles from './counter-button.module.css'
+import styles from "./counter-button.module.css";
 
-export const CounterButton = ({ handleClick, label }) =>
-{
-    return (<div data-testid="counter-button" 
-						className={styles.btn}
-						onClick={handleClick}>
-						{label}
-					</div>)
+export function CounterButton({ handleClick, label }) {
+  return (
+    <div
+      data-testid="counter-button"
+      className={styles.btn}
+      onClick={handleClick}
+    >
+      {label}
+    </div>
+  );
 }

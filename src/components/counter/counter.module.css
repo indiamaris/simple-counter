@@ -1,23 +1,22 @@
 .counterPage {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
 }
 
 .counterButtons {
-	width: 75%;
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 @media screen and (max-width: 768px) {
-	.counterPage {
-		font-size: 20px;
-			height: 50svh;
-				padding: 0px;
-	}
+  .counterPage {
+    font-size: 20px;
+    height: 50svh;
+    padding: 0px;
+  }
 }
-

@@ -1,28 +1,20 @@
 /** @format */
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap");
 /** @format */
 
 @media screen and (min-width: 900px) {
-	
-	.info{
-padding-top: 20px;
-padding-bottom: 20px;
-		color: #028090;
-	}
-	
-		
+  .info {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #028090;
+  }
 }
 
-@media screen and (max-width: 768px){
-	.info{
-		font-size: 20px;
-		padding-top: 10px;
-		padding-bottom: 10px;
-	}
-
-	
-
-	
+@media screen and (max-width: 768px) {
+  .info {
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }
-
