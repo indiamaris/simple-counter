@@ -17,7 +17,7 @@ const Counter = () => {
 	return (
 		<div className={styles.counterPage}>		
 			<Total value={total} />	
-					<div className={styles.counterButtons}>	
+			<div className={styles.counterButtons}>	
 			<CounterButton label={'+1'} handleClick={handleIncremet}/>
 			<CounterButton label={'-1'} handleClick={handleDecrement} />		
 	</div>
