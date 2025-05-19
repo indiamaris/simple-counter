@@ -1,8 +1,8 @@
 /** @format */
 import { useState } from 'react';
-import { CounterButton } from '../button/counter-button';
-import { Total } from '../total/total';
+import { CounterButton } from './button/counter-button';
 import styles from './counter.module.css';
+import { Total } from './total/total';
 
 const Counter = () => {
 	const [total, setTotal] = useState(0);

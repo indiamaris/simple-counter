@@ -5,7 +5,7 @@
 
 @media screen and (min-width: 900px) {
 	
-	.mainInfo{
+	.info{
 padding-top: 20px;
 padding-bottom: 20px;
 		color: #028090;
@@ -15,8 +15,7 @@ padding-bottom: 20px;
 }
 
 @media screen and (max-width: 768px){
-	.mainInfo{
-		color: #028090;
+	.info{
 		font-size: 20px;
 		padding-top: 10px;
 		padding-bottom: 10px;
