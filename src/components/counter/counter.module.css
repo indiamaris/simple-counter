@@ -3,6 +3,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	padding: 50px;
 }
 
 .counterButtons {
@@ -16,6 +17,7 @@
 	.counterPage {
 		font-size: 20px;
 			height: 50svh;
+				padding: 0px;
 	}
 }
 
