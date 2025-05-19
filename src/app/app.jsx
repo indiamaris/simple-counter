@@ -8,7 +8,7 @@ import { AppUI } from './app.ui';
 const App = () => {
 
 	return <AppUI
-		main={<div>
+		main={<div data-testid="app-container">
   <Header />
 			<Info />
 			<StartButton />

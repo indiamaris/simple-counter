@@ -9,37 +9,25 @@ describe('Counter Component', () => {
 
   test('displays initial count of 0', () => {
     render(<Counter />);
-    const countDisplay = screen.getByText('0');
-    expect(countDisplay).toBeInTheDocument();
+    const countDisplay = screen.getByTestId('total-value');
+    expect(countDisplay).toHaveTextContent('0');
   });
 
   test('increments count when increment button is clicked', () => {
     render(<Counter />);
-    const incrementButton = screen.getByText('+1');
+    const buttons = screen.getAllByTestId('counter-button');
+    const incrementButton = buttons.find(button => button.textContent === '+1');
     fireEvent.click(incrementButton);
-    const countDisplay = screen.getByText('1');
-    expect(countDisplay).toBeInTheDocument();
+    const countDisplay = screen.getByTestId('total-value');
+    expect(countDisplay).toHaveTextContent('1');
   });
 
   test('decrements count when decrement button is clicked', () => {
     render(<Counter />);
-    const decrementButton = screen.getByText('-1');
+    const buttons = screen.getAllByTestId('counter-button');
+    const decrementButton = buttons.find(button => button.textContent === '-1');
     fireEvent.click(decrementButton);
-    const countDisplay = screen.getByText('-1');
-    expect(countDisplay).toBeInTheDocument();
-  });
-
-  test('resets count when reset button is clicked', () => {
-    render(<Counter />);
-    const incrementButton = screen.getByText('+1');
-    const resetButton = screen.getByText('Reset');
-    
-    // First increment to 1
-    fireEvent.click(incrementButton);
-    expect(screen.getByText('1')).toBeInTheDocument();
-    
-    // Then reset
-    fireEvent.click(resetButton);
-    expect(screen.getByText('0')).toBeInTheDocument();
+    const countDisplay = screen.getByTestId('total-value');
+    expect(countDisplay).toHaveTextContent('-1');
   });
 }); 

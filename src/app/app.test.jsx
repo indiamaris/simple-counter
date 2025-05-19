@@ -1,4 +1,4 @@
-import { render } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import App from './app';
@@ -13,14 +13,15 @@ const renderWithRouter = (component) => {
 };
 
 describe('App Component', () => {
+
   test('renders without crashing', () => {
     renderWithRouter(<App />);
   });
 
-  test('renders the main app container', () => {
+  test('renders app container with correct data-testid', () => {
     renderWithRouter(<App />);
-    // Using a more specific selector to find the app container
-    const appContainer = document.querySelector('div[class*="app"]');
+    const appContainer = screen.getByTestId('app-container');
     expect(appContainer).toBeInTheDocument();
   });
+
 }); 
