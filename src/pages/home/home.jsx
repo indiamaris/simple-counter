@@ -1,9 +1,9 @@
 /** @format */
 import React from 'react';
 import { Outlet } from 'react-router-dom';
+import './home.css';
 import Header from '../../components/header/header';
 import { StartButton } from '../../components/start-button/start-button';
-import './home.css';
 const Home = () => {
 	return (
 		<div className='homeContainer'>
@@ -11,7 +11,8 @@ const Home = () => {
 				<div className='headerContainer'>
 					<Header />
 					<StartButton />
-				</div></div>
+				</div>
+			</div>
 			<div className="counter">				<Outlet /></div>
 		</div>
 	);
